@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/ng1/processing/processing.module.js",
+              "src/ng1/processing/processing-home.component.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,5 +126,10 @@
       }
     }
   },
-  "defaultProject": "hybrid"
+  "defaultProject": "hybrid",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
